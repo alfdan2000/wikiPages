@@ -1,0 +1,66 @@
+body{
+    background-color:#4e005e;
+}
+p{
+    text-align: center;    
+    margin-top:1%;
+    margin-left: -2%;
+    color: white;
+}
+a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+#randomLink{
+    margin: 0 auto;
+    margin-top: 25%;    
+    display: block; 
+    text-align: center;
+    font-size: 200%;
+    text-decoration: none;
+    font-weight: bold;
+}
+#searchButton{
+    margin: 0 auto;
+    display: block; 
+    background-color: transparent;    
+    border: none;    
+    outline: none;
+    cursor: pointer;  
+    margin-top: 2%; 
+    image-orientation: center;        
+}
+#enterButton{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+#inputbox{
+    
+   
+    
+}
+#enterButton{
+    
+    
+}
+#searchingInput{
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    vertical-align: middle;
+    visibility: hidden;
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
