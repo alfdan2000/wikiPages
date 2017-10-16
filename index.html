@@ -6,23 +6,25 @@
     <link rel="stylesheet" type="text/css" href="css/wikipages.css" />
     <script type="text/javascript" src="javascript/wikiPages.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
 <body>
     <div id="search">
-        <a href="https://en.wikipedia.org/wiki/Special:Random" id="randomLink" target="_blank"> Click here for random article </a>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" id="randomLink" target="_blank"> Click here for random wikipedia article </a>
         <div id="searchingimage">
             <button id="searchButton" class="fa fa-search fa-4x" aria-hidden="true"></button>
         </div>
-        <div id="searchingInput" class="input-group-btn">
-            <input id="inputbox" type="text" class="" placeholder="Enter the value to search"></input>
-            <div>
-                <button id="enterButton" type="submit" class="fa fa-search fa-2x"></input>
-            </div>
-        </div>
+        <div id="searchingInput" class=" w3-row">
+            <input id="inputbox" type="text" class="col-xs-4" placeholder="Enter the value to search" onkeydown="buttonPressed()"></input>
+            <button id="enterButton" type="submit" class="col-xs-4 fa fa-search fa-2x" onclick="searchItem()"></input>            
+        </div>        
         <p>Click magnifying glass to search</p>
+        <div style="padding: 5%">        
+            <div id="results" class="w3-row"></div>
+        </div>        
     </div>
 </body>
 
