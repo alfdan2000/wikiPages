@@ -7,12 +7,6 @@ $(document).ready(function () {
     });
 });
 
-function buttonPressed() {
-    if (event.keyCode == 13) {
-        searchItem();
-    }
-
-}
 
 function searchItem() {
     $('.results').css("visibility", "visible");
@@ -25,12 +19,14 @@ function searchItem() {
     
     $.getJSON(wikiUrl, function (data) {
         //$('#results').empty();
-        for (var x = 0; data[1][x] != null; x++) {
+        
+        for (var x = 0; data[1][0] != null; x++) {
+            console.log('go go');
             jQuery('<div/>', {
                 "id": x,
                 "class": " w3-row"
             }).appendTo('#results');
-
+            console.log('again');
             
             var name = document.createElement('a');
             var description = document.createElement('p');
@@ -43,5 +39,12 @@ function searchItem() {
             document.getElementById(x).appendChild(description);
         }
     })
+}
+
+function buttonPressed() {
+    if (event.keyCode == 13) {
+        searchItem();
+    }
+
 }
 
