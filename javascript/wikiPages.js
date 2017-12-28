@@ -18,9 +18,9 @@ function searchItem() {
     var wikiUrl = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + item + "&format=json&callback=?";
     
     $.getJSON(wikiUrl, function (data) {
-        //$('#results').empty();
+        $('#results').empty();
         
-        for (var x = 0; data[1][0] != null; x++) {
+        for (var x = 0; data[1][x] != null; x++) {
             console.log('go go');
             jQuery('<div/>', {
                 "id": x,
@@ -31,9 +31,13 @@ function searchItem() {
             var name = document.createElement('a');
             var description = document.createElement('p');
             name.innerHTML = data[1][x];
-            name.className = "w3-col m4 l3 results"
+            
+            name.setAttribute('href', data[3][x]);
             description.innerHTML = data[2][x];
-            description.className = "w3-col m8 l6 results"
+            //name.style.backgroundColor = "rgb(205, 207, 214)";
+            //name.style.color = "black";
+            name.className = "w3-col m4 l3 resultsName"; 
+            description.className = "w3-col m8 l9 resultsDescrip";
             
             document.getElementById(x).appendChild(name);
             document.getElementById(x).appendChild(description);
