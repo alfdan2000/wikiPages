@@ -11,6 +11,7 @@ $(document).ready(function () {
 function searchItem() {
     $('.results').css("visibility", "visible");
     $('#resultDescr').css("visibility", "visible");
+    $('#inputbox').css("autofocus", "autofocus");
     var item = $('#inputbox').val().toString();
     console.log(item);
     
