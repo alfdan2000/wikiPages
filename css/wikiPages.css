@@ -9,21 +9,16 @@ p{
     display: block;
     color: white;
 }
-
-
 a:hover{
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
-
 result:link{
     background-color: rgb(205, 207, 214);    
     text-decoration: none;
     color: black;
 }
-
-
 #randomLink{
     margin: 0 auto;
     margin-top: 2%;    
@@ -84,7 +79,6 @@ searchingimage{
     vertical-align: center;
     
 }
-
 .resultsName{
     visibility: visible;
     border: .5px solid black;
@@ -100,7 +94,6 @@ searchingimage{
     vertical-align: center;
     text-decoration: none;
 }
-
 .resultsName:hover{
     background-color: transparent;    
     color: black;
